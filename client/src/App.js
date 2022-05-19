@@ -1,23 +1,29 @@
 import logo from './logo.svg';
+import {useState} from 'react'
 import './App.css';
+import {GetAllComment} from './Services/Comment-service'
+import {CreateComment} from './Services/Comment-service'
+import {GetAllProduct} from './Services/Product-service'
+import {CreateProduct} from './Services/Product-service'
 
 function App() {
+  const [comment,setComment]=useState({})
+  const onFieldChange = (e) => {
+    const { name, value } = e.target;
+    setComment()
+    console.log(comment)  
+  };
+  const MakeComment= async()=>{
+    console.log(comment);
+await CreateProduct(comment).then(()=>{alert("comment sent")})
+
+}
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+
+<input type="text" name="Description" onChange={onFieldChange}></input>
+<button onClick={MakeComment}>get</button>
     </div>
   );
 }
