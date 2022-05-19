@@ -7,8 +7,7 @@ dotenv.config();
 const express = require("express");
 const cors = require('cors');
 const path = require("path");
-// const commentRoute=require('./Routes/comments-route');
-// const productsRoute=require('./Routes/products-route')
+
 
 require('./DB/');
 const app = express();
