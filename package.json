@@ -13,12 +13,12 @@
     "start-dev": "concurrently \"npm run server-dev\" \"npm run client\"",
     "heroku-postbuild": "cd client && npm install --only=dev && npm install && npm run build"
   },
-  
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
     "bcryptjs": "^2.4.3",
+    "build": "^0.1.4",
     "concurrently": "^7.2.0",
     "cors": "^2.8.5",
     "dotenv": "^16.0.1",

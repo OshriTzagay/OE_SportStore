@@ -14,7 +14,7 @@ const Get = async (req, res) => {
 
 const GetByName = async (req, res) => {
   const { pages, limit } = req.query;
-  await Product.find({ Name: req.params.Name })
+  await Product.find({ Name: req.params.name })
     .limit(limit)
     .skip((pages - 1) * limit)
     .then((data) => {
@@ -25,7 +25,7 @@ const GetByName = async (req, res) => {
 
 const GetByProductType = async (req, res) => {
   const { pages, limit } = req.query;
-  await Product.find({ Type: req.params.Type })
+  await Product.find({ Type: req.params.type })
     .limit(limit)
     .skip((pages - 1) * limit)
     .then((data) => {
