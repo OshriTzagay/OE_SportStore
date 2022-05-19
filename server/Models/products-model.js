@@ -10,11 +10,22 @@ const Product = new mongoose.Schema(
 
     Size: { type: Array, required: true },
     
+    InStock:{type:String,required:true},
+
     Name:{type:String},
-
+    
     Pics: { type: Array },
-
+    
     Likes: { type: Array },
+
+    Price: {type:Number},
+
+    Description:{type:String},
+
+    Gender:{type:String},
+
+    
+
 
   },
   { timestamps: true }
