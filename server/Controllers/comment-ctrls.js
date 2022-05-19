@@ -37,7 +37,7 @@ let Add = async (req, res) => {
     .then((data) => {
       res.send(data);
     })
-    .catch((err) => res.status(404).send({ message: error }));
+    .catch((err) => res.status(404).send({ message: err }));
 };
 
 //PUT

@@ -8,7 +8,7 @@ const Product = new mongoose.Schema(
 
     Brand: { type: String, required: true },
 
-    Size: { type: String, required: true },
+    Size: { type: Array, required: true },
     
     Name:{type:String},
 
