@@ -1,7 +1,7 @@
 .pre-nav {
   background: rgba(224, 208, 208, 0.788);
   display: flex;
-  width: 100vw;
+  width: 98.9vw;
   height: 7vh;
 }
 
@@ -24,7 +24,7 @@
 }
 
 .nav-bar {
-  width: 100vw;
+  width: 98.9vw;
   height: 15vh;
   background: rgba(0, 0, 0, 0.859);
   color: white;
