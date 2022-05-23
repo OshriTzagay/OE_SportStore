@@ -1,0 +1,88 @@
+.pre-nav {
+  background: rgba(224, 208, 208, 0.788);
+  display: flex;
+  width: 100vw;
+  height: 7vh;
+}
+
+.section-A {
+  display: flex;
+  justify-content: end;
+  width: 50vw;
+  height: 7vh;
+}
+
+.section-A p {
+  margin: 5px;
+  font-size: 12px;
+}
+.section-B {
+  display: flex;
+  justify-content: start;
+  width: 50vw;
+  height: 7vh;
+}
+
+.nav-bar {
+  width: 100vw;
+  height: 15vh;
+  background: rgba(0, 0, 0, 0.859);
+  color: white;
+ font-family: "Helvetica Neue", Helvetica, Arial, sans-serif
+}
+ul {
+  display: flex;
+  justify-content: space-around;
+}
+li {
+  list-style-type: none;
+}
+li a:visited {
+  color: white;
+}
+a {
+  text-decoration: none;
+}
+
+.logo {
+  width: 40px;
+  height: 40px;
+}
+
+input{
+    width: 110px;
+    height: 25px;
+    border-radius: 10ch;
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1) 1s;
+
+}
+
+input:focus{
+    width: 200px;
+}
+
+.theUl{
+    width: 60vw;
+    height: 7vh;
+}
+
+.right-section{
+width: 20vw;
+height: 7vh;
+}
+.left-section{
+    width: 20vw;
+    height: 7vh;
+}
+
+.nav-routes{
+    display: flex;
+}
+.theUl{
+    font-size: 16px;;
+}
+
+.accIcon{
+    width: 40px;
+    height: 4   0px;
+}
