@@ -12,7 +12,7 @@ export default function Navbar() {
         <div className="section-A">
           <p>Help |</p>
           <p>Join Us |</p>
-          <p>Sign In |</p>
+          <p>Sign In</p>
         </div>
       </div>
 

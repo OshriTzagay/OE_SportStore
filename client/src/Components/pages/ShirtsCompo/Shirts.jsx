@@ -12,10 +12,9 @@ export default function Shirts() {
 
   return (
     <div>
-      <h1>Shirts</h1>
-      {/* <input type="text" name="name" onChange={CheckUpdate} /> */}
 
-      <button onClick={CheckUpdate}>AAA</button>
+
+      {/* <button onClick={CheckUpdate}>AAA</button> */}
     </div>
   );
 }
