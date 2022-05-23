@@ -9,16 +9,16 @@ import AppRouter from "./AppRouter";
 
 function App() {
   const [comment, setComment] = useState({});
+  const [all,setAll]=useState([]);
+  const GetAll = async () => {
+    await GetAllProduct().then((res) => {
+      setAll(res)
+    });
+  };
   const onFieldChange = (e) => {
     const { name, value } = e.target;
     setComment();
     console.log(comment);
-  };
-  const MakeComment = async () => {
-    console.log(comment);
-    await CreateProduct(comment).then(() => {
-      alert("comment sent");
-    });
   };
 
   return (
